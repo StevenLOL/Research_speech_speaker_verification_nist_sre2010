@@ -1,0 +1,2 @@
+# Research_speech_speaker_verification_nist_sre2010
+Research_speech_speaker_verification_nist_sre2010
