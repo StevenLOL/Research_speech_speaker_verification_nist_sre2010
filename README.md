@@ -1,4 +1,9 @@
-# Research_speech_speaker_verification_nist_sre2010
+# Research_speech_speaker_verification_nist_sre2010 [work in progress]
+
+Found a nice application which you can draw/drag/drop mindmap 
+
+https://www.mindmup.com
+
 Research_speech_speaker_verification_nist_sre2010
 
 
