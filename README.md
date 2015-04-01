@@ -1,4 +1,4 @@
-# Research_speech_speaker_verification_nist_sre2010 [work in progress]
+# Research_speech_speaker_verification_nist_sre2010 [working in progress]
 
 Found a nice application which you can draw/drag/drop mindmap 
 
