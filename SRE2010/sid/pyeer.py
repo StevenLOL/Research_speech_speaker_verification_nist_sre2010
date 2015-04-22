@@ -9,7 +9,7 @@ import numpy as np
 
 
 def processDataTable2(scores):
-  #scores is a list of scores and its ture/false labels
+  #scores is a list of [scores ,ture/false labels]
   #scores[i,0] is the score
   #scores[i,1] is the 1 or 0
   print '# of scores:',len(scores)
