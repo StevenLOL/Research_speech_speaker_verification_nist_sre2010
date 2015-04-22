@@ -9,19 +9,9 @@ import numpy as np
 
 
 def processDataTable2(scores):
-  #ds=open(ikaldi_result).readlines();
-  #ds=[s.strip().split() for s in ds]
-  #scorindex=-1;
-  #for i in range(0,len(ds[0])):
-  #  if isinstance(ds[0][i], float):
-  #    scorindex=i;
-  #    break;
-  #targetIndex=-1;
-  #for i in range(0,len(ds[0])):
-  #  if isinstance(ds[0][i], float):
-  #    targetIndex=i;
-  #    break;
-  #scores=[[s[scorindex],1 if s[targetIndex].lower()=='target' else 0] for s in ds]
+  #scores is a list of scores and its ture/false labels
+  #scores[i,0] is the score
+  #scores[i,1] is the 1 or 0
   print '# of scores:',len(scores)
   scores=sorted(scores); #  min->max
   sort_score=np.matrix(scores);
