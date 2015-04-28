@@ -1,4 +1,5 @@
-Here is the SRE folder
+Here is the Kaldi SRE2010 folder, please notice that this project is based on Kaldi SRE2008 example,forked under version r3473. PLDA adapation in the latest release is not used in this project.
+
 
 
 
@@ -14,10 +15,14 @@ To make it work:
 
 
 
+#Folders:
+##Data
+###Data folder contains the reference to the following data
+femaleTmatrix, female_ubm : data used for background model training.
+enroll* :enrollment data used to build known speaker model (indeed just a vector).
+test*:  data refer to data used to verfy system performance.
 
-#naming conventions
-In this project we name data used for background model training as training data
-
-Enrollment data refer to data used to build known speaker model, in deed just a vector.
-
-Test data refer to data used to verfy system performance.
+##MFCC, exp
+System generated folders, 
+MFCC hold the mfcc features
+exp contains ubm, iVectorExtractor,ivectors , and LDA/PLDA model
