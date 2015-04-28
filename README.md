@@ -18,10 +18,6 @@ SRE2008
 ##Test Dataset
 SRE2010
 
-
-
-#Will you use SV ?
-
 #Prerequisites
 ##data
 ##NIST DATA
@@ -29,6 +25,7 @@ SRE2010
 #Kaldi
 #Install Kaldi
 
+If you use this baseline kindly cite paper:
 
 Steven Du, Xiong Xiao, Eng Siong Chng, "DNN FEATURE COMPENSATION FOR NOISE ROBUST SPEAKER VERIFICATION", in proceedings of ChinaSIP 2015
 
