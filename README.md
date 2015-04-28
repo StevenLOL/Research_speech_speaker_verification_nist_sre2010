@@ -3,10 +3,10 @@
 
 
 
-This baseline build on well-established iVector/PLDA speaker verification framework for SRE 2010 task.
+This baseline build on well-established iVector/PLDA speaker verification framework for SRE 2010 female tasks.
 It is based on Kaldi SRE2008 example,forked under version r3473.
 
-#Data used in this system:
+#There are two stups for SRE2010 differentce by using of SRE2008 data
 ##Setup 1 
 SRE2008 is not used for Tmatrix,PLDA,LDA training, reported as the clean iVector/PLDA base line in [1] with average EER 3.50%
 ###UBM training
