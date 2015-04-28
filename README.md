@@ -8,7 +8,7 @@ It is based on Kaldi SRE2008 example,forked under version r3473.
 
 #There are two stups for SRE2010 differentce by using of SRE2008 data
 ##Setup 1 
-SRE2008 is not used for Tmatrix,PLDA,LDA training, reported as the clean iVector/PLDA base line in [1] with average EER 3.50%
+SRE2008 is not used for Tmatrix,PLDA,LDA training, reported as the clean iVector/PLDA base line in [1] with average EER 3.50%. Results reported by other researchers on SRE2010 in papers[?]
 ###UBM training
 Switchboard II Phase 2 and 3, Switchboard Cellular Part 1 and 2, and NIST SRE 2004, 2005 and 2006
 ###I Vector Extractor training
@@ -19,7 +19,7 @@ SRE2008
 SRE2010
 
 ##Setup 2
-SRE2008 is used for Tmatrix,PLDA,LDA training (WIP)
+SRE2008 is used for Tmatrix,PLDA,LDA training (WIP),results reported by other researchers in this setup[??]
 ###UBM training
 Switchboard II Phase 2 and 3, Switchboard Cellular Part 1 and 2, and NIST SRE 2004, 2005 and 2006,SRE2008
 ###I Vector Extractor training
