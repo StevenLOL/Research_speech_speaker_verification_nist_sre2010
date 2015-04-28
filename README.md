@@ -20,12 +20,6 @@ SRE2010
 
 
 
-#About speaker verfication
-#What is SV
-#What is not SV
-#Openset/close set speaker identification, spoken phase basedd SV
-#Challenges of SV
-
 #Will you use SV ?
 
 #Prerequisites
@@ -36,23 +30,6 @@ SRE2010
 #Install Kaldi
 
 
-#About SRE
-
-
-#About SRE
-
-#General approach
-
-#UBM Training
-
-#Speaker Enrollment
-
-#Verfy speakers
-
-
-Found a nice application which you can draw/drag/drop mindmap 
-
-https://www.mindmup.com
-
+Steven Du, Xiong Xiao, Eng Siong Chng, "DNN FEATURE COMPENSATION FOR NOISE ROBUST SPEAKER VERIFICATION", in proceedings of ChinaSIP 2015
 
 
