@@ -19,6 +19,7 @@ SRE2010
 
 #Prerequisites
 ##data
+having the Data listed above
 ##NIST DATA
 ##NIST Keys
 #Kaldi
