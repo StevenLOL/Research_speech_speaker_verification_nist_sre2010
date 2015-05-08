@@ -16,15 +16,15 @@ UtteranceID2 [d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n ]\n
 Where \n means new line.
 
 To view raw feature, type the following command in the terminal
-
+```
 copy-feats ark:./abc.ark ark,t:
-
+```
 This command means copy the feature form input source (ark:source) to output target (ark,t:target),here we leave "target" empty so the feature will print to the terminal.
 Following two commands will dumpy the features to text file
-
+```
 copy-feats ark:./abc.ark ark,t: > a.txt
 copy-feats ark:./abc.ark ark,t:a.txt
-
+```
 
 
 ###The scp file
@@ -35,10 +35,10 @@ It is often saw a scp file with the same file name which describes the content o
 for example abc.ark abc.scp
 
 Following two commands will give same results
-
+```
 copy-feats scp:./abc.scp ark,t:
 copy-feats ark:./abc.ark ark,t:
-
+```
 ##Features in the data folder
 
 feats.scp and vad.scp are two feature descriptors in the Kaldi data folder.
