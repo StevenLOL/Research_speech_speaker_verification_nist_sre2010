@@ -2,7 +2,7 @@
 
 ##Raw Feature location
 
-Most kaldi features are stored in mfcc folder. 
+Most kaldi features are stored in mfcc folder with an extension of ark or scp.
 
 ###The ark file
 
@@ -20,10 +20,14 @@ To view raw feature, type the following command in the terminal
 copy-feats ark:./abc.ark ark,t:
 ```
 This command means copy the feature form input source (ark:source) to output target (ark,t:target),here we leave "target" empty so the feature will print to the terminal.
-Following two commands will dumpy the features to text file
+Following two commands will dump the features to text file
 ```
 copy-feats ark:./abc.ark ark,t: > a.txt
 copy-feats ark:./abc.ark ark,t:a.txt
+```
+And dump to binary file:
+```
+copy-feats ark:./abc.ark ark:a.bin
 ```
 
 
