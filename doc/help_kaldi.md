@@ -10,6 +10,7 @@ The ark stores the raw features, its size of ark is normally in few hundred MBs.
 Eg: 20 dimensional MFCC features matrix is stored in the ark file like following:
 
 UtteranceID1 [d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n ...]\n
+
 UtteranceID2 [d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n ]\n
 
 Where \n means new line.
