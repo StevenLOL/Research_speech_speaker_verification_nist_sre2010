@@ -45,9 +45,9 @@ To reproduce experimental results:
 3. utt2spk and spk2utt are interchangeable 
 
 
->>*PathToUtilsFolder*/spk2utt_to_utt2spk.pl spk2utt > utt2spk
+>*PathToUtilsFolder*/spk2utt_to_utt2spk.pl spk2utt > utt2spk
 
->>*PathToUtilsFolder*/utt2spk_to_spk2utt.pl utt2spk > spk2utt
+>*PathToUtilsFolder*/utt2spk_to_spk2utt.pl utt2spk > spk2utt
 ##MFCC, exp folder
 System generated folders, 
 MFCC hold the mfcc features, 
