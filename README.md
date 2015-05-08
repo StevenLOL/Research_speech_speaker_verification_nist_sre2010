@@ -3,7 +3,7 @@
 
 
 
-This baseline build on well-established iVector/PLDA speaker verification framework for SRE 2010 female tasks. This work is based on based on Kaldi SRE 2008 example. The result is reported as the clean iVector/PLDA base line in [1] with average EER 3.50%. 
+This baseline build on well-established iVector/PLDA speaker verification framework for SRE 2010 female tasks. This work is based on Kaldi SRE 2008 example. The result is reported as the clean iVector/PLDA base line in [1] with average EER 3.50%. 
 
 
  
