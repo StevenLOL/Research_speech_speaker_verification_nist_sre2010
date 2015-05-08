@@ -1,5 +1,7 @@
 #Read/write kaldi features
 
+#Read kaldi features
+
 ##Raw Feature location
 
 Most kaldi features are stored in mfcc folder with an extension of ark or scp.
@@ -36,11 +38,11 @@ copy-feats ark:./abc.ark ark:a.bin
 
 It is often saw a scp file with the same file name which describes the content of an ark file.
 
-The scp is only a text file,format for scp :
+The scp is only a text file, with following format:
 
-UtteranceID1 feature_location1 
+UtteranceID1 arkLocation1:offset1 
 
-UtteranceID2 feature_location2
+UtteranceID2 arkLocation2:offset2
 
 
 
@@ -53,3 +55,8 @@ copy-feats ark:./abc.ark ark,t:
 ##Features in the data folder
 
 feats.scp and vad.scp are two feature descriptors in the Kaldi data folder.
+
+
+#write kaldi features
+
+One can write kaldi feature to the ark follow the given text format
