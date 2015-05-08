@@ -18,4 +18,4 @@ Keys for scoring
 #2. Hardware
 It's better to have a PC with more than 24GB memory.
 #3. Kaldi
-You need Kladi system to run this experiment, check this [guide](../SRE2010/README.md) for more details.
+You need Kladi system to run this experiment, check this [guide](../SRE2010) for more details.
