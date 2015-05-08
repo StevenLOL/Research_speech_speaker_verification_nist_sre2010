@@ -22,7 +22,7 @@ To view raw feature, type the following command in the terminal
 ```
 copy-feats ark:./abc.ark ark,t:
 ```
-This command means copy the feature form input source (ark:source) to output target (ark,t:target),here we leave "target" empty so the feature will print to the terminal.
+This command means copy the feature from input source (ark:source) to output target (ark,t:target),here we leave "target" empty so the feature will print to the terminal.
 Following two commands will dump the features to text file
 ```
 copy-feats ark:./abc.ark ark,t: > a.txt
