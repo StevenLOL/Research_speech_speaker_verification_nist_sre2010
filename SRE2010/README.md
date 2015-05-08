@@ -1,5 +1,4 @@
-Here is the Kaldi SRE2010 folder, this project is based on Kaldi SRE2008 example,forked under version r3473. PLDA adaption in the latest release is not used in this project.
-
+Here is the Kaldi SRE2010 folder, this project is based on Kaldi SRE2008 example,forked under version r3473.
 
 
 
@@ -8,7 +7,7 @@ To reproduce experimental results:
 
 
 
-1. install kaldi 	
+1. install Kaldi 	
 	```
 	svn checkout -r 3473 https://svn.code.sf.net/p/kaldi/code/trunk/
 	```
@@ -32,11 +31,11 @@ To reproduce experimental results:
 2. utt2spk:
 >this file indicates the utterance and speaker relationship
 3. spk2utt:
->this file indicates speaker to uterance relationship (1 to many)
+>this file indicates speaker to utterance relationship (1 to many)
 4. feats.scp:
 >will only appear when features are extracted, it contains utteranceID and feature location information
 5. vad.scp:
->will only appear after comput vad step,it contains utteranceID and feature location information
+>will only appear after compute VAD step,it contains utteranceID and feature location information
 6. split*N*:
 >Kldi divide data in N parts, execute the script simultaneously,known as data parallelism. 
 
@@ -52,4 +51,4 @@ To reproduce experimental results:
 ##MFCC, exp folder
 System generated folders, 
 MFCC hold the mfcc features, 
-exp contains ubm, iVectorExtractor,ivectors , and LDA/PLDA model and score.
+exp contains UBM, iVectorExtractor,ivectors , and LDA/PLDA model and score.
