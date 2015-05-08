@@ -6,7 +6,8 @@ Most kaldi features are stored in mfcc folder with an extension of ark or scp.
 
 ###The ark file
 
-The ark stores the raw features, its size of ark is normally in few hundred MBs.
+The ark stores raw features, its size of ark is normally in few hundred MBs.
+
 Eg: 20 dimensional MFCC features matrix is stored in the ark file like following:
 
 UtteranceID1 [d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n ...]\n
@@ -33,10 +34,16 @@ copy-feats ark:./abc.ark ark:a.bin
 
 ###The scp file
 
-It is often saw a scp file with the same file name which describes the content of the ark file. The scp is only a text file,format for scp is in the utteranceid and feature location pairs per line.
+It is often saw a scp file with the same file name which describes the content of an ark file.
+
+The scp is only a text file,format for scp :
+
+UtteranceID1 feature_location1 
+
+UtteranceID2 feature_location2
 
 
-for example abc.ark abc.scp
+
 
 Following two commands will give same results
 ```
