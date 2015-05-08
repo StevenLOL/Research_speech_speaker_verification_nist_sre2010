@@ -20,13 +20,35 @@ To make it work:
 
 
 #Folders:
-##Data
+##Data folder
 ###Data folder contains the reference to the following data
-femaleTmatrix, female_ubm : data used for background model training.
-enroll* :enrollment data used to build known speaker model (indeed just a vector).
-test*:  data refer to data used to verify system performance.
+1. femaleTmatrix, female_ubm : data used for background model training.
+2. enroll* :enrollment data used to build known speaker model (indeed just a vector).
+3. test*:  refer to data used to verify system performance.
+###Contents of each data folder
+1. wav.scp: 
+>this is the most important file, it contains utteranceID and utterance location information
+2. utt2spk:
+>this file indicates the utterance and speaker relationship
+3. spk2utt:
+>this file indicates speaker to uterance relationship (1 to many)
+4. feats.scp:
+>will only appear when features are extracted, it contains utteranceID and feature location information
+5. vad.scp:
+>will only appear after comput vad step,it contains utteranceID and feature location information
+6. split*N*:
+>Kldi divide data in N parts, execute the script simultaneously,known as data parallelism. 
 
-##MFCC, exp
+###Some notes about the data
+1. To ensure your data can be split into N parts, **utteranceID in wav.scp, utt2spk,feats.scp,vad.scp must have same order**.
+2. utteranceID must be unique
+3. utt2spk and spk2utt are interchangeable 
+
+
+>>*PathToUtilsFolder*/spk2utt_to_utt2spk.pl spk2utt > utt2spk
+
+>>*PathToUtilsFolder*/utt2spk_to_spk2utt.pl utt2spk > spk2utt
+##MFCC, exp folder
 System generated folders, 
-MFCC hold the mfcc features
-exp contains ubm, iVectorExtractor,ivectors , and LDA/PLDA model
+MFCC hold the mfcc features, 
+exp contains ubm, iVectorExtractor,ivectors , and LDA/PLDA model and score.
