@@ -6,7 +6,7 @@ Most kaldi features are stored in mfcc folder.
 
 ###The ark file
 
-The ark file is the raw feature file are with extension '.ark'. The size of ark is normally in few hundred MBs.
+The ark stores the raw features, its size of ark is normally in few hundred MBs.
 Eg: 20 dimensional MFCC features matrix is stored in the ark file like following:
 
 UtteranceID1 [d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n d1 d2 d3 d4 d5 .. d20\n ...]\n
