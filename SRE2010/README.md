@@ -25,6 +25,7 @@ To reproduce experimental results:
 1. femaleTmatrix, female_ubm : data used for background model training.
 2. enroll* :enrollment data used to build known speaker model (indeed just a vector).
 3. test*:  refer to data used to verify system performance.
+
 ###Contents of each data folder
 1. wav.scp: 
 >this is the most important file, it contains utteranceID and utterance location information
