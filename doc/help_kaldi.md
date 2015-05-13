@@ -36,7 +36,7 @@ copy-feats ark:./abc.ark ark:a.bin
 
 ####The scp file
 
-It is often saw a scp file with the same file name which describes the content of an ark file.
+It is often saw a scp file which describes the content of an ark file.
 
 The scp is only a text file, with following format:
 
