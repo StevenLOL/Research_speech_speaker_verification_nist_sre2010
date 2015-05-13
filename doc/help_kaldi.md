@@ -8,7 +8,7 @@ Most Kaldi features are stored in mfcc folder with an extension of ark or scp.
 
 ####The ark file
 
-The ark stores raw features, its size of ark is normally in few hundred MBs.
+The ark stores raw features, its size is normally in few hundred MBs.
 
 Eg: 20 dimensional MFCC features matrix is stored in the ark file like following:
 
