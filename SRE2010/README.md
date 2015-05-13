@@ -11,7 +11,7 @@ To reproduce experimental results:
 	```
 	svn checkout -r 3473 https://svn.code.sf.net/p/kaldi/code/trunk/
 	```
-2. git this projcet
+2. git this project
 2. change KaldiRoot in path.sh to point to your kaldi system
 3. change path in wav.scp data folder
 4. make sure files in sid/steps/utils are executable
