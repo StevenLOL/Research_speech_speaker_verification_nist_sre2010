@@ -1,6 +1,6 @@
 #Read/write Kaldi features
 
-##Read Kaldi features
+##Read Kaldi MFCC features
 
 ###Raw Feature location
 
@@ -57,9 +57,37 @@ copy-feats ark:./abc.ark ark,t:
 feats.scp and vad.scp are two feature descriptors in the Kaldi data folder.
 
 
-#Write kaldi features
+##Write kaldi MFCC features
 
 One can write kaldi feature to the ark follow the given text format. However most script in Kaldi require its scp file, one way to create scp file is:
 ```
 copy-feats ark:./abc.ark ark,scp:b.ark,b.scp
+```
+
+
+##Read/write kaldi iVector 
+Read/write kaldi iVector is similar to read/write MFCC feature, only replace the copy-feats with copy-vector command.
+
+###Read Kaldi iVector
+The MFCC feature is matrix like data structure, the iVector is sorted in the ark file too, but in a vector format:
+
+UtteranceID1 [d1 d2 d3 d4 d5 .. d400]\n
+
+UtteranceID2 [d1 d2 d3 d4 d5 .. d400]\n
+
+Similar to read MFCC feature,following command will read the iVector:
+```
+copy-vector ark:./ivector.1.ark ark,t:
+copy-vector ark:./ivector.1.ark ark,t:YOUR_TEXT_FILE
+
+```
+
+###Write Kaldi iVector
+
+Once you know the iVector format, you can write it back easily.
+Following command will convert your ark file to Kaldi format, and generate a scp file.
+
+```
+copy-vector ark,t:./your.ark ark,t:
+
 ```
