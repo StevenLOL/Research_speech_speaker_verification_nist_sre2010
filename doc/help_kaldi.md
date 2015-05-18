@@ -1,8 +1,10 @@
 #Read/write Kaldi features
 
+We introduce the reading and writing of two type of features here, matrix like MFCC feature, and vector based iVector.
+
 ##Read Kaldi MFCC features
 
-###Raw Feature location
+###Raw MFCC Feature location
 
 Most Kaldi features are stored in mfcc folder with an extension of ark or scp.
 
@@ -68,8 +70,14 @@ copy-feats ark:./abc.ark ark,scp:b.ark,b.scp
 ##Read/write kaldi iVector 
 Read/write kaldi iVector is similar to read/write MFCC feature, only replace the copy-feats with copy-vector command.
 
+###Raw iVetor Feature location
+
+Most Kaldi features are stored in "exp" folder with an extension of ark or scp.
+
+
 ###Read Kaldi iVector
-The MFCC feature is matrix like data structure, the iVector is sorted in the ark file too, but in a vector format:
+
+iVector is sorted in the ark in a vector format:
 
 UtteranceID1 [d1 d2 d3 d4 d5 .. d400]\n
 
@@ -88,6 +96,6 @@ Once you know the iVector format, you can write it back easily.
 Following command will convert your ark file to Kaldi format, and generate a scp file.
 
 ```
-copy-vector ark,t:./your.ark ark,t:
+copy-vector ark,t:./your.ark ark,scp:kaldi.ivectors.ark,kaldi.ivectors.scp
 
 ```
