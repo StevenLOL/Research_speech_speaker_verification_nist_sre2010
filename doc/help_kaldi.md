@@ -85,7 +85,7 @@ UtteranceID1 [d1 d2 d3 d4 d5 .. d400]\n
 
 UtteranceID2 [d1 d2 d3 d4 d5 .. d400]\n
 
-VAD have same format except the length of VAD is depends on the length of utterance. Each value in VAD represents a frame either 1 for voiced frame and 0 for unvoice frame.
+VAD have same format except the length of VAD is depends on the length of utterance. 1 for voiced frame , 0 for unvoice frame. 1 frame= 10ms
 
 
 
