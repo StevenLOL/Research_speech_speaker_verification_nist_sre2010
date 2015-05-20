@@ -1,6 +1,6 @@
 #Read/write Kaldi features
 
-We introduce the reading and writing of two type of features here, matrix like MFCC feature, and vector based iVector.
+We introduce the reading and writing of two type of features here, matrix like MFCC feature, and vector based iVector and VAD vector.
 
 ##Read Kaldi MFCC features
 
@@ -67,12 +67,14 @@ copy-feats ark:./abc.ark ark,scp:b.ark,b.scp
 ```
 
 
-##Read/write kaldi iVector 
-Read/write kaldi iVector is similar to read/write MFCC feature, only replace the copy-feats with copy-vector command.
+##Read/write kaldi iVector or VAD vector
+Both iVector and VAD vector are in vector form. Read/write kaldi iVector is similar to read/write MFCC feature, only replace the copy-feats with copy-vector command.
 
 ###Raw iVetor Feature location
 
-Most Kaldi features are stored in "exp" folder with an extension of ark or scp.
+Most Kaldi iVector are stored in "exp" folder with an extension of ark or scp.
+
+The VADs are stored in 'mfcc' folder.
 
 
 ###Read Kaldi iVector
