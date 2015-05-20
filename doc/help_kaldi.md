@@ -85,6 +85,10 @@ UtteranceID1 [d1 d2 d3 d4 d5 .. d400]\n
 
 UtteranceID2 [d1 d2 d3 d4 d5 .. d400]\n
 
+VAD have same format except the length of VAD is depends on the length of utterance. Each value in VAD represents a frame either 1 for voiced frame and 0 for unvoice frame.
+
+
+
 Similar to read MFCC feature,following command will read the iVector:
 ```
 copy-vector ark:./ivector.1.ark ark,t:
