@@ -51,5 +51,5 @@ To reproduce experimental results:
 ```
 ##MFCC, exp folder
 System generated folders, 
-MFCC hold the mfcc features, 
+MFCC hold the mfcc features and frmae level VAD label, 
 exp contains UBM, iVectorExtractor,ivectors , and LDA/PLDA model and score.
