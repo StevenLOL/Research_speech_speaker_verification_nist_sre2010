@@ -38,7 +38,7 @@ To reproduce experimental results:
 5. vad.scp:
 >will only appear after compute VAD step,it contains utteranceID and feature location information
 6. split*N*:
->Kldi divide data in N parts, execute the script simultaneously,known as data parallelism. 
+>Kldi divide data in N parts, execute script simultaneously,known as data parallelism. 
 
 ###Some notes about the data
 1. To ensure your data can be split into N parts, **utteranceID in wav.scp, utt2spk,feats.scp,vad.scp must have same order**.
@@ -51,5 +51,7 @@ To reproduce experimental results:
 ```
 ##MFCC, exp folder
 System generated folders, 
-MFCC hold the mfcc features and frmae level VAD label, 
-exp contains UBM, iVectorExtractor,ivectors , and LDA/PLDA model and score.
+
+MFCC folder contains the mfcc features and frmae level VAD label, 
+
+exp folder contains UBM, iVectorExtractor,ivectors , and LDA/PLDA model and score.
