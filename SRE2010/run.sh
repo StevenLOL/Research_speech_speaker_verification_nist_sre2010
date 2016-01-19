@@ -9,6 +9,25 @@
 # This example script is still a bit of a mess, and needs to be
 # cleaned up, but it shows you all the basic ingredients.
 
+
+
+#First, one have to orgranize data in data folder, then run through this script by change the switches
+#This file is based Daniel and David's script
+#general process of SV
+#1 get features
+#2 train GMM
+#3 train ivector extractor
+#4 wait 3 is done
+#5 extractor ivector for enrollment (E) and test speakers (T)
+#6 comput the distance of (E,T) eg CosDistance(E,T)
+#7 refer to a offical result and compute the goodness meaure of your system eg EER
+#8 process ivector of 5 with other post pressing method eg LDA , PLDA and compute new distance and EER
+ 
+
+
+
+
+#system seting, including path info for all kaldi programs
 . cmd.sh
 . path.sh
 set -e
@@ -16,16 +35,13 @@ mfccdir=`pwd`/mfcc
 vaddir=`pwd`/mfcc
 
 
-
+#switches for functions in this file, beter set to true one at a time
 extract_feature=false;
-
 train_full_ubm=false;
 train_ivector_extractor=false;
 extract_ivectors=false;
-
 eval_d_cos=false;
 extract_ivectors_train=false; #for plda
-
 evla=false;
 eval_cos=false;
 eval_lda=false;
@@ -50,7 +66,7 @@ if $extract_feature; then
      
 fi
 
-exit 0
+
 
 if $train_full_ubm;then
 
