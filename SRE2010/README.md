@@ -15,7 +15,7 @@ To reproduce experimental results:
 2. change KaldiRoot in path.sh to point to your kaldi system
 3. change path in wav.scp data folder
 4. make sure files in sid/steps/utils are executable
-5. evaluation method used are equal error rate EER
+5. evaluation method used is equal error rate EER
 
 
 
