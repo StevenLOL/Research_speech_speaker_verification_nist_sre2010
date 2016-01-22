@@ -79,11 +79,11 @@ The VADs are stored in 'mfcc' folder.
 
 ###Read Kaldi iVector
 
-iVector is sorted in the ark in a vector format:
+iVector is sorted in the ark in a vector format, please notice that there is a 'SPACE' after '[' and no 'SPACE' in UtteranceID:
 
-UtteranceID1 [d1 d2 d3 d4 d5 .. d400]\n
+UtteranceID1 [ d1 d2 d3 d4 d5 .. d400 ]\n
 
-UtteranceID2 [d1 d2 d3 d4 d5 .. d400]\n
+UtteranceID2 [ d1 d2 d3 d4 d5 .. d400 ]\n
 
 VAD have same format except the length of VAD is depends on the length of utterance. 1 for voiced frame , 0 for unvoice frame. 1 frame= 10ms
 
