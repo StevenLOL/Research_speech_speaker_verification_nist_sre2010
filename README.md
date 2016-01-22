@@ -1,6 +1,6 @@
 #Update:
 
-[Kaldi now have SRE10 example.](https://github.com/kaldi-asr/kaldi/tree/master/egs/sre10), so please use the recipes in the latest kaldi. Thanks. If you need infomation on Kaldi's data format you can still refer to [this document](doc/help_kaldi.md).
+[Kaldi now has SRE10 example.](https://github.com/kaldi-asr/kaldi/tree/master/egs/sre10), so please use the recipes in the latest kaldi. Thanks. If you need infomation on Kaldi's data format you can still refer to [this document](doc/help_kaldi.md).
 
 
 ~~~
