@@ -110,7 +110,7 @@ copy-vector ark,t:./your.ark ark,scp:kaldi.ivectors.ark,kaldi.ivectors.scp
 
 ##FAQ
 ###Where is the copy-feats and copy-vector ?
-It is in your kaldi src folder. You need include their directoy in your path. Please refer to the path.sh in the this SRE folder.
+It is in your kaldi src folder. You need include their directory in your path. Please refer to the path.sh in the this SRE folder.
 
 To load the setting in the path.sh, type this in terminal in SRE2010 folder
 
