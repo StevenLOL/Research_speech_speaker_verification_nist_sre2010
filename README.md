@@ -12,7 +12,7 @@ The subdirectories "v1" and so on are different iVector-based speaker
 ~~~
 
 
-# Kaldi SRE2010 [working in progress]
+# Kaldi SRE2010 
 
 This baseline build on well-established iVector/PLDA speaker verification framework for SRE 2010 female tasks. This work is based on Kaldi SRE 2008 example. The result is reported as the clean iVector/PLDA baseline in [1] with average EER 3.50% over nine core conditions.
 
